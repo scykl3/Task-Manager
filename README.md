@@ -32,3 +32,8 @@ A command-line application written in C/C++ that provides basic system monitorin
    ```
    Note that you may need to use the `-L` and `-I` flags for the libraries
 
+## Usage
+Once you run the application, you can use the following commands:
+- `list [pid|mem|name]` - Displays and sorts the list of processes.  
+- `kill <PID>` - Terminates the specified process.   
+- `priority <PID> <level>` - Changes the process priority (low, normal, high, realtime).
