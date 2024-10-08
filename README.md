@@ -25,13 +25,15 @@ A command-line application written in C/C++ that provides basic system monitorin
 3. **Compiling**
    ```bash
    cl /FeTaskManager.exe src\main.c src\process_management.c src\resource_monitoring.c src\user_interface.c /link pdh.lib psapi.lib
+    .\TaskManager.exe
    ```
    or
    ```bash
    gcc -o TaskManager.exe main.c process_management.c resource_monitoring.c user_interface.c -lpdh -lpsapi
+    .\TaskManager.exe
    ```
    Note that you may need to use the `-L` and `-I` flags for the libraries
-
+   
 ## Usage
 Once you run the application, you can use the following commands:
 - `list [pid|mem|name]` - Displays and sorts the list of processes.  
